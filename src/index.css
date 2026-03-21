@@ -1,0 +1,318 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Multilingual Offensive Language Detection - AI-Themed Dark Design System */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@layer base {
+  /* Default: Warm Theme */
+  :root, .theme-warm {
+    /* Core Dark Theme - Warm Dark with Golden Accent */
+    --background: 30 15% 6%;
+    --foreground: 40 30% 96%;
+
+    /* Card surfaces with glass effect */
+    --card: 30 15% 9%;
+    --card-foreground: 40 30% 96%;
+
+    --popover: 30 15% 8%;
+    --popover-foreground: 40 30% 96%;
+
+    /* Primary - Warm Golden/Amber (#F4B860) */
+    --primary: 38 87% 67%;
+    --primary-foreground: 30 15% 6%;
+
+    /* Secondary - Warm brown tones */
+    --secondary: 30 25% 18%;
+    --secondary-foreground: 40 30% 90%;
+
+    /* Muted tones */
+    --muted: 30 15% 14%;
+    --muted-foreground: 30 15% 55%;
+
+    /* Accent - Rich Orange */
+    --accent: 25 80% 55%;
+    --accent-foreground: 30 15% 6%;
+
+    /* Semantic colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 40 30% 98%;
+
+    --success: 142 76% 45%;
+    --success-foreground: 40 30% 98%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 30 15% 6%;
+
+    /* Borders and inputs */
+    --border: 30 20% 18%;
+    --input: 30 20% 15%;
+    --ring: 38 87% 67%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(38 87% 67%) 0%, hsl(25 80% 55%) 50%, hsl(15 70% 50%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(30 15% 6%) 0%, hsl(30 15% 4%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(30 15% 11% / 0.8) 0%, hsl(30 15% 8% / 0.6) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(38 87% 67% / 0.15) 0%, transparent 70%);
+    
+    /* Glow effects */
+    --glow-primary: 0 0 40px hsl(38 87% 67% / 0.3);
+    --glow-success: 0 0 20px hsl(142 76% 45% / 0.4);
+    --glow-danger: 0 0 20px hsl(0 84% 60% / 0.4);
+    --glow-accent: 0 0 40px hsl(25 80% 55% / 0.3);
+
+    /* Theme-specific accent colors */
+    --theme-accent-1: 25 80% 55%;
+    --theme-accent-2: 38 87% 70%;
+    --theme-bg-accent: 25 20% 8%;
+
+    /* Sidebar */
+    --sidebar-background: 30 15% 8%;
+    --sidebar-foreground: 40 30% 90%;
+    --sidebar-primary: 38 87% 67%;
+    --sidebar-primary-foreground: 30 15% 6%;
+    --sidebar-accent: 30 20% 17%;
+    --sidebar-accent-foreground: 40 30% 98%;
+    --sidebar-border: 30 20% 18%;
+    --sidebar-ring: 38 87% 67%;
+  }
+
+  /* Cool Theme - Original Cyan/Purple */
+  .theme-cool {
+    /* Core Dark Theme - Deep Purple/Blue */
+    --background: 260 30% 6%;
+    --foreground: 210 40% 98%;
+
+    /* Card surfaces with glass effect */
+    --card: 260 30% 9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 260 30% 8%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Primary - Vibrant Cyan/Teal */
+    --primary: 183 89% 47%;
+    --primary-foreground: 260 30% 6%;
+
+    /* Secondary - Purple tones */
+    --secondary: 280 40% 20%;
+    --secondary-foreground: 210 40% 90%;
+
+    /* Muted tones */
+    --muted: 260 25% 14%;
+    --muted-foreground: 260 15% 55%;
+
+    /* Accent - Electric Purple */
+    --accent: 280 70% 50%;
+    --accent-foreground: 260 30% 6%;
+
+    /* Semantic colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --success: 142 76% 45%;
+    --success-foreground: 210 40% 98%;
+
+    --warning: 38 92% 50%;
+    --warning-foreground: 260 30% 6%;
+
+    /* Borders and inputs */
+    --border: 260 25% 20%;
+    --input: 260 25% 17%;
+    --ring: 183 89% 47%;
+
+    /* Custom gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(183 89% 47%) 0%, hsl(200 80% 50%) 50%, hsl(280 70% 50%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(260 30% 6%) 0%, hsl(260 30% 4%) 100%);
+    --gradient-card: linear-gradient(135deg, hsl(260 30% 11% / 0.8) 0%, hsl(260 30% 8% / 0.6) 100%);
+    --gradient-glow: radial-gradient(ellipse at center, hsl(183 89% 47% / 0.15) 0%, transparent 70%);
+    
+    /* Glow effects */
+    --glow-primary: 0 0 40px hsl(183 89% 47% / 0.3);
+    --glow-accent: 0 0 40px hsl(280 70% 50% / 0.3);
+
+    /* Theme-specific accent colors */
+    --theme-accent-1: 280 70% 50%;
+    --theme-accent-2: 200 70% 60%;
+    --theme-bg-accent: 260 30% 8%;
+
+    /* Sidebar */
+    --sidebar-background: 260 30% 8%;
+    --sidebar-foreground: 210 40% 90%;
+    --sidebar-primary: 183 89% 47%;
+    --sidebar-primary-foreground: 260 30% 6%;
+    --sidebar-accent: 260 25% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 260 25% 20%;
+    --sidebar-ring: 183 89% 47%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  code, pre {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  /* Glass morphism cards */
+  .glass-card {
+    @apply bg-card/60 backdrop-blur-xl border border-white/10 shadow-xl;
+    background: var(--gradient-card);
+  }
+
+  /* Glowing border effect */
+  .glow-border {
+    @apply relative;
+    box-shadow: var(--glow-primary);
+  }
+
+  .glow-border::before {
+    content: '';
+    @apply absolute inset-0 rounded-lg opacity-50;
+    background: var(--gradient-primary);
+    filter: blur(20px);
+    z-index: -1;
+  }
+
+  /* Neural network background pattern */
+  .neural-bg {
+    background-image: 
+      radial-gradient(circle at 25% 25%, hsl(38 87% 67% / 0.05) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, hsl(25 80% 55% / 0.05) 0%, transparent 50%),
+      linear-gradient(hsl(30 15% 12% / 0.5) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(30 15% 12% / 0.5) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 50px 50px, 50px 50px;
+  }
+
+  /* Offensive highlight styles */
+  .highlight-offensive {
+    @apply bg-destructive/20 text-destructive border-b-2 border-destructive px-1 rounded;
+  }
+
+  .highlight-warning {
+    @apply bg-warning/20 text-warning border-b-2 border-warning px-1 rounded;
+  }
+
+  .highlight-safe {
+    @apply bg-success/20 text-success px-1 rounded;
+  }
+
+  /* Animated gradient text */
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* Pulse animation for active elements */
+  .pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px hsl(38 87% 67% / 0.2);
+    }
+    50% {
+      box-shadow: 0 0 40px hsl(38 87% 67% / 0.4);
+    }
+  }
+
+  /* Floating animation */
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  /* Fade in animation */
+  .fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Typing cursor */
+  .typing-cursor::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  /* Scrollbar styling */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-muted/30 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/40 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/60;
+  }
+
+  /* Custom scrollbar for specific elements */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-muted/20 rounded-full;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-primary/30 rounded-full;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    @apply bg-primary/50;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
